@@ -1,0 +1,29 @@
+:root {
+    --brand-primary: #2e60eb;
+    --brand-translucent: #2e60eb2b;
+    --brand-light: #d4e0ff;
+    --brand-lighter: #f0f4fe;
+    --brand-dark: #18337e;
+
+    --font-primary: #000000;
+    --font-secondary: #ffffff;
+    --font-three: #6d6d6d;
+
+    --border-primary: #ececec;
+}
+
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: small;
+  color: var(--font-primary);
+  margin: 0;
+  margin-bottom: 30px;
+  line-height: 0.95;
+}
+
+h1, h2, p{
+    margin: 0;
+    padding: 0;
+}
+
