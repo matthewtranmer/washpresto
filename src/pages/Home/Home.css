@@ -1,10 +1,11 @@
 .content {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 25px;
     align-items: center;
     margin-inline: auto;
     width: fit-content;
+    min-width: 400px;
 }
 .title-section{
 
@@ -16,11 +17,12 @@
     word-spacing: 3px;
     letter-spacing: 1.5px;
     font-size: clamp(10px, 1vw, 14px);
+    margin-left: 5px;
 }
 
 .title-section h1{
     font-weight: 900;
-    font-size: clamp(40px, 10vw, 100px);
+    font-size: clamp(60px, 10vw, 100px);
 }
 
 .title-section-main-1 {
@@ -33,22 +35,127 @@
 
 .title-section-main {
     font-weight: 800;
+    margin-left: 5px;
 }
 
 .title-section-lower-text {
     font-size: clamp(15px, 2vw, 20px);
-    font-weight: 100;
+    font-weight: 700;
     margin-top: 15px;
+    margin-left: 5px;
 }
+
 
 .separator {
-    height: 50px;
-    background-color: var(--brand-light);
-    width: 100vw;
-    align-self: center;
+    background-color: #fff6a2;
+    width: 100%;
+    padding: 7px 0px;
 }
 
-.content-section {
-    background-color: red;
+.separator-content{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.separator-text{
+    word-spacing: 2px;
+}
+
+
+.lower-content-section {
+    width: 95%;
+}
+
+.lower-content-title-group {
+    margin-left: 15px;
+    margin-bottom: 10px;
+    max-width: 300px;
+}
+
+.lower-content-title{
+    margin-bottom: 8px;
+    font-size: 30px;
+    font-weight: 1000;
+}
+
+
+.services-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.service{
+    background-color: var(--brand-lighter);
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.service-button{
+    background-color:  var(--brand-primary);
+    padding: 7px;
+    border-radius: 1000px;
+    color: white;
+    width: 26px;
+    position: absolute;
+    right: 10px;
+}
+
+.top-bar{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.service-title{
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    font-size: 25px;
+}
+
+.service-price{
+    margin-top: 13px;
+}
+
+.service-icon{
+    stroke-width: 3.5px;
+    width: 35px;
+    height: 35px
+}
+
+.collection-button{
     width: 100%;
+    border: 0px;
+    border-radius: 15px;
+    height: 40px;
+    background-color: var(--brand-primary);
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    position: relative;
+    margin-top: 20px;
+}
+
+.collection-button-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    margin: 0;
+}
+
+.collection-button-arrow svg {
+    display: block;
 }
