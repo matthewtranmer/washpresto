@@ -1,6 +1,7 @@
 import './Home.css'
 
-import { Sparkles } from "lucide-react";
+import { CalendarDays, Handbag, Sparkles, Truck } from "lucide-react";
+
 
 
 function ArrowSVG(){
@@ -82,17 +83,17 @@ function Service({Icon, title, subTitle, pricePerKG, className}: serviceProps){
                 <ArrowSVG></ArrowSVG>
             </div>
 
-            <div>
+            <div className='service-icon-container'>
                 <Icon className='service-icon'></Icon>
             </div>
 
             <div>
                 <h3 className='service-title'>{title}</h3>   
-                <p>{subTitle}</p>
+                <p className='service-subtitle'>{subTitle}</p>
             </div>
             
             <div>
-                <p className='service-price'>From <b>£{pricePerKG}</b>/ kg</p>
+                <p className='service-price'>From <span className="service-price-amount">£{pricePerKG}</span>/ kg</p>
             </div>
             
         </div>
@@ -101,28 +102,51 @@ function Service({Icon, title, subTitle, pricePerKG, className}: serviceProps){
 
 function Home(){
     return (
-        <div className='content'>
-            <div className='title-section'>
-                <p className='title-section-upper-text'>LAUNDRY. OFF YOUR LIST.</p>
-             
-                <div className='title-section-main'>
-                    <h1 className='title-section-main-1'>Less laundry.</h1>
-                    <h1 className='title-section-main-2'>More living.</h1>
+        <div>
+            <div className='content'>                
+                <div className='title-section'>
+                    <p className='title-section-upper-text'>LAUNDRY. OFF YOUR LIST.</p>
+                    
+                    <div className='title-section-main'>
+                        <h1 className='title-section-main-1'>Less laundry.</h1>
+                        <h1 className='title-section-main-2'>More living.</h1>
+                    </div>
+
+                    <p className='title-section-lower-text'>Collect. cleaned. delivered.</p>
                 </div>
 
-                <p className='title-section-lower-text'>Collect. cleaned. delivered.</p>
-            </div>
+                <div className='separator'>
+                    <div className='separator-content'>
+                        <div className='separator-explanation-group'>
+                            <CalendarDays></CalendarDays>
+                            <div>You book</div>
+                        </div>
 
-            <div className='separator'>
-                <div className='separator-content'>
-                    <div>
-                        <Sparkles strokeWidth={1} width={30} height={30}></Sparkles>
-                    </div>
-                    <div className='separator-text'>
-                        Fresh clothes. Less Mess. More free time.
+                        <ArrowSVG></ArrowSVG>
+
+                        <div className='separator-explanation-group'>
+                            <Handbag></Handbag>
+                            <div>We collect</div>
+                        </div>
+
+                        <ArrowSVG></ArrowSVG>
+
+                        <div className='separator-explanation-group'>
+                            <Sparkles></Sparkles>
+                            <div>We clean</div>
+                        </div>
+
+                        <ArrowSVG></ArrowSVG>
+
+                        <div className='separator-explanation-group'>
+                            <Truck></Truck>
+                            <div>We deliver</div>
+                        </div>
+                        {/* Fresh clothes. More free time. */}
+                        {/* Calendar       Bag         Sparkle        Van     */}
+                        {/* You book  -> We collect -> We clean -> We deliver */}
                     </div>
                 </div>
-            </div>
 
                 <div className='lower-content-section'>
                     <div className='lower-content-title-group'>
@@ -131,8 +155,8 @@ function Home(){
                     </div>
 
                     <div className='services-list'>
-                        <Service Icon={FoldedShirtSVG} title='Wash & Fold' subTitle='Everyday laundry, sorted.' pricePerKG='2.20'/>
-                        <Service Icon={LaundryBasketSVG} title='Wash & Iron' subTitle='Fresh, pressed and ready to wear.' pricePerKG='3.00'/>
+                        <Service Icon={LaundryBasketSVG} title='Wash & Fold' subTitle='Everyday laundry, sorted.' pricePerKG='2.20'/>
+                        <Service Icon={FoldedShirtSVG} title='Wash & Iron' subTitle='Fresh, pressed and ready to wear.' pricePerKG='3.00'/>
                     </div>
 
                     <button className='collection-button'>
@@ -144,9 +168,12 @@ function Home(){
 
                     </button>
                 </div>
-            
+            </div>
 
+            
         </div>
+
+       
     )
 }
 
