@@ -1,0 +1,106 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.timeslot-collection-date-comment {
+    margin-bottom: 20px;
+}
+
+.timeslot-collection-time-picker {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+}
+
+.timeslot-collection-time {
+    text-align: center;
+}
+
+.timeslot-collection-time.active {
+    background-color: var(--brand-primary);
+    border-color: var(--brand-primary);
+    color: white;
+}
+
+.timeslot-delivery-date-picker {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.timeslot-delivery-date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 15px;
+    position: relative;
+}
+
+.timeslot-delivery-date.active {
+    background-color: var(--brand-primary);
+    border-color: var(--brand-primary);
+    color: white;
+}
+
+.timeslot-address-picker {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.timeslot-address {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 20px;
+}
+
+.timeslot-address-checkbox {
+    margin-left: 5px
+}
+
+.timeslot-address-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.timeslot-address-arrow {
+    position: absolute;
+    right: 10px;
+}
+
+.timeslot-address-name {
+    font-weight: 500;
+}
+
+.timeslot-address-lines {
+    font-size: 11px;
+}
+
+.timeslot-new-address-box {
+    display: flex;
+    color: var(--brand-primary);
+    align-items: center;
+    gap: 20px;
+}
+
+.timeslot-new-address-icon {
+    margin-left: 5px;
+}
+
+.timeslot-continue-button {
+    width: 100%;
+    margin-bottom: 50px;
+}

@@ -1,0 +1,39 @@
+.datepicker {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    width: 350px;
+    max-width: 100%;
+    min-width: 0;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.datepicker-date {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  align-items: center;
+
+  padding: 10px 20px;
+  border-radius: 10px;
+
+  width: 50px;
+  cursor: pointer;
+}
+
+.datepicker-date.active {
+    background-color: var(--brand-primary);
+    color: white;
+}
+
+.datepicker-date-day {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.datepicker-date-weekday, .datepicker-date-month {
+    font-size: 12px;
+}

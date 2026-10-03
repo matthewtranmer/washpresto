@@ -1,0 +1,36 @@
+
+.booklayout {
+    min-width: 400px;
+}
+
+.booklayout-heading-container {
+    display: flex;
+    position: relative;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.booklayout-heading-container h1 {
+    margin: auto;
+}
+
+.booklayout-back-button {
+    position: absolute;
+    left: 0;
+    text-decoration: none;
+    color: black;
+}
+
+.booklayout-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.booklayout-subtitle {
+    margin-bottom: 3px;
+}
+
+.booklayout-comment {
+    margin-bottom: 10px;
+}

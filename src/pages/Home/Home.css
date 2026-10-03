@@ -1,4 +1,4 @@
-.content {
+.home-content {
     display: flex;
     flex-direction: column;
     gap: 45px;
@@ -9,11 +9,11 @@
 }
 
 /* Remove gap from top */
-.title-section{
+.home-title-section{
     margin-top: 5px
 }
 
-.title-section-upper-text{
+.home-title-section-upper-text{
     color: var(--brand-primary);
     font-weight: 600;
     word-spacing: 3px;
@@ -22,25 +22,25 @@
     margin-left: 5px;
 }
 
-.title-section h1{
+.home-title-section h1{
     font-weight: 900;
     font-size: clamp(60px, 10vw, 100px);
 }
 
-.title-section-main-1 {
+.home-title-section-main-1 {
     color: var(--brand-dark);
 }
 
-.title-section-main-2 {
+.home-title-section-main-2 {
     color: var(--brand-primary);
 }
 
-.title-section-main {
+.home-title-section-main {
     font-weight: 800;
     margin-left: 5px;
 }
 
-.title-section-lower-text {
+.home-title-section-lower-text {
     font-size: clamp(15px, 2vw, 20px);
     font-weight: 700;
     margin-top: 15px;
@@ -48,13 +48,13 @@
 }
 
 
-.separator {
+.home-separator {
     background-color: #fff6a2;
     width: 100%;
     padding: 7px 0px;
 }
 
-.separator-content{
+.home-separator-content{
     display: flex;
     margin-left: 10px;
     margin-right: 10px;
@@ -66,7 +66,7 @@
     font-weight: 100;
 }
 
-.separator-explanation-group{
+.home-separator-explanation-group{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,30 +75,30 @@
 }
 
 
-.lower-content-section {
+.home-lower-content-section {
     width: 93%;
 }
 
-.lower-content-title-group {
+.home-lower-content-title-group {
     margin-left: 15px;
     margin-bottom: 10px;
     max-width: 300px;
 }
 
-.lower-content-title{
+.home-lower-content-title{
     margin-bottom: 8px;
     font-size: 30px;
     font-weight: 1000;
 }
 
 
-.services-list{
+.home-services-list{
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.service{
+.home-service{
     background-color: var(--brand-lighter);
     padding: 15px;
     border-radius: 10px;
@@ -107,7 +107,7 @@
     position: relative;
 }
 
-.service-button{
+.home-service-button{
     background-color:  var(--brand-primary);
     padding: 7px;
     border-radius: 1000px;
@@ -117,7 +117,7 @@
     right: 10px;
 }
 
-.top-bar{
+.home-top-bar{
     margin: 0;
     display: flex;
     flex-direction: row;
@@ -126,55 +126,48 @@
     margin-bottom: 3px;
 }
 
-.service-title{
+.home-service-title{
     margin: 0;
     margin-top: 10px;
     margin-bottom: 2px;
     font-size: 25px;
 }
 
-.service-subtitle{
+.home-service-subtitle{
     margin-top: 5px;
 }
 
-.service-price{
+.home-service-price{
     margin-top: 13px;
 }
 
-.service-price-amount{
+.home-service-price-amount{
     font-weight: 800;
     color: var(--brand-primary);
     font-size: 16px;
 }
 
-.service-icon-container{
+.home-service-icon-container{
     background-color: #ffffff98;
     width: min-content;
     border-radius: 1000px;
     padding: 9px;
 }
 
-.service-icon{
+.home-service-icon{
     stroke-width: 3.5px;
     width: 35px;
     height: 35px
 }
 
-.collection-button{
+.home-collection-button{
     width: 100%;
-    border: 0px;
-    border-radius: 15px;
-    height: 40px;
-    background-color: var(--brand-primary);
-    color: white;
-    font-size: 13px;
-    font-weight: 500;
     position: relative;
     margin-top: 20px;
     margin-bottom: 60px;
 }
 
-.collection-button-arrow {
+.home-collection-button-arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -182,6 +175,6 @@
     margin: 0;
 }
 
-.collection-button-arrow svg {
+.home-collection-button-arrow svg {
     display: block;
 }

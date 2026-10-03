@@ -1,0 +1,136 @@
+.service-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 10px;
+    margin-top: 10px;
+}
+
+.service-service-selection-container {
+    width: 100%;
+}
+
+.service-service-options {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.service-service-option {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 15px;
+}
+
+.service-service-option:hover {
+    cursor: pointer;
+}
+
+.service-service-option.active {
+    border-color: var(--brand-primary);
+    background-color: var(--brand-lighter);
+    box-shadow: 2px 2px 4px var(--brand-lighter);
+}
+
+.service-service-content {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 10px 0;
+}
+
+.service-service-content p {
+    margin: 0;
+}
+
+.service-service-title {
+    font-weight: 700;
+}
+
+.service-service-comment {
+    font-size: 11.5px;
+}
+
+.service-service-lower-content{
+    font-size: 13px;
+}
+
+.service-service-price {
+    font-weight: 600;
+}
+
+.service-service-checkbox-container {
+    position: absolute;
+    right: 30px;
+}
+
+.service-weight-selection-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+}
+
+.service-weight-selection-container p{
+    margin: 0;
+    margin-bottom: 5px
+}
+
+.service-weight-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+@media (min-width: 500px) {
+    .service-weight-options {
+        gap: 15px;
+    }
+}
+
+.service-weight-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 100px;
+}
+
+.service-weight-option:hover{
+    cursor: pointer;
+}
+
+.service-weight-option p {
+    margin: 0;
+}
+
+.service-weight-option.active {
+    background-color: var(--brand-lighter);
+    border-color: var(--brand-primary);
+    box-shadow: 2px 2px 4px var(--brand-lighter);
+}
+
+.service-weight-option-title {
+    font-size: clamp(12.5px, 3vw, 15px);
+    font-weight: 500;
+}
+
+.service-weight-option-info {
+    font-size: 10px;
+}
+
+.service-weight-option-price {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+
+.service-continue-button {
+    width: 100%;
+    margin-bottom: 50px;
+}

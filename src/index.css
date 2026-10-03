@@ -7,9 +7,10 @@
 
     --font-primary: #000000;
     --font-secondary: #ffffff;
-    --font-three: #6d6d6d;
+    --font-three: #b8b8b8;
 
-    --border-primary: #ececec;
+    --border-primary: #cfcfcf;
+    --shadow: rgb(214, 214, 214);
 }
 
 
@@ -22,8 +23,29 @@ body {
   line-height: 0.95;
 }
 
-h1, h2, p{
-    margin: 0;
-    padding: 0;
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+  padding: 0;
 }
 
+.standard-button{
+  border: 0px;
+  border-radius: 15px;
+  height: 40px;
+  background-color: var(--brand-primary);
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  width: fit-content;
+}
+
+.standard-button:hover{
+  cursor: pointer;
+}
+
+.standard-box {
+  padding: 10px;
+  border: 1px solid var(--border-primary);
+  box-shadow: 0.1px 0.1px var(--shadow);
+  border-radius: 7px;
+}

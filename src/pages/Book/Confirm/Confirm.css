@@ -1,0 +1,196 @@
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+
+.timeline-marker {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: var(--brand-lighter);
+    color: var(--brand-primary);
+
+    position: relative;
+}
+
+.timeline-item:not(:last-child) .timeline-marker::after {
+    content: "";
+    position: absolute;
+
+    top: 100%;
+    left: 50%;
+
+    width: 0;
+    height: 28px;
+
+    border-left:1.5px dashed gray;
+
+    transform: translateX(-50%);
+}
+
+.confirm-service {
+    display: flex;
+    position: relative;
+    padding: 15px;
+    align-items: center;
+    gap: 20px;
+}
+
+.confirm-service-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.confirm-service-price {
+    position: absolute;
+    right: 15px;
+    font-size: 15px;
+}
+
+.confirm-preferences-container {
+    position: relative;
+}
+
+.confirm-preferences-all-button {
+    position: absolute;
+    color: var(--brand-primary);
+    right: 15px;
+    top: 42px;
+    cursor: pointer;
+
+}
+
+.confirm-preferences-list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.confirm-preference {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.confirm-preference-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.confirm-preference-icon {
+    width: 35px;
+    height: 35px;
+    stroke-width: 1.4px;
+}
+
+
+.confirm-cost-breakdown-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.confirm-cost-breakdown-separator{
+    width: 100%;
+    background-color: var(--border-primary);
+    height: 1px;
+    margin: 4px 0;
+}
+
+.confirm-cost-breakdown-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11.5px;
+}
+
+.confirm-cost-breakdown-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.confirm-cost-breakdown-item-price {
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.confirm-cost-breakdown-total-heading {
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.confirm-cost-breakdown-total-price {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.confirm-payment-method-top-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.confirm-payment-method-manage {
+    position: absolute;
+    right: 10px;
+    color: var(--brand-primary);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.confirm-payment-methods-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.confirm-payment-method {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+
+.confirm-payment-method-right {
+    position: absolute;
+    right: 10px;
+}
+
+.confirm-add-new-card {
+    color: var(--brand-primary);
+}
+
+
+.confirm-booking-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.confirm-booking-button {
+    width: 100%;
+}
+
+.confirm-terms {
+    font-size: 10px
+}

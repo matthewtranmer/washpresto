@@ -4,7 +4,7 @@ import logo from '@/assets/logo.png'
 import logoTextOnly from '@/assets/logo-text-only.png'
 
 
-import { Menu, X, House, Info, Settings, User, Mail, Shirt } from 'lucide-react';
+import { Menu, X, House, Info, Settings, User, Mail, Shirt, CalendarDays } from 'lucide-react';
 import { NavLink } from 'react-router-dom'
 import { useState } from 'react';
 
@@ -60,6 +60,13 @@ function SideNav({open, onClose}: sideNavProps){
                     link='/'
                     text='Home'
                     sideIcon={House}
+                    onClose={onClose}
+                />
+
+                <SideNavLink 
+                    link='/book'
+                    text='Book'
+                    sideIcon={CalendarDays}
                     onClose={onClose}
                 />
 
