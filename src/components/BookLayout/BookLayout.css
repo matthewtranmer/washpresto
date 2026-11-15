@@ -1,4 +1,3 @@
-
 .booklayout {
     min-width: 400px;
 }
@@ -25,6 +24,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin: 0 15px;
 }
 
 .booklayout-subtitle {

@@ -27,7 +27,7 @@ type serviceProps = {
 
 function Service({Icon, title, subTitle, pricePerKG, className}: serviceProps){
     return (
-        <div className={`home-service ${className ?? ""}`}>
+        <div className={`home-service standard-box ${className ?? ""}`}>
             <div className='home-service-button'>
                 <ArrowSVG></ArrowSVG>
             </div>
