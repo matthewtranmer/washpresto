@@ -204,7 +204,7 @@ function Confirm(){
 
             <div className='confirm-booking-section'>
                 <button className='confirm-booking-button standard-button'>
-                    Confirm booking
+                    Confirm & Pay
                 </button>
 
                 <div className='confirm-terms'>

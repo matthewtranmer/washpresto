@@ -3,7 +3,7 @@ import {BrowserRouter, Navigate, Route, Routes} from 'react-router-dom'
 import Home from '@/pages/Home/Home'
 import About from '@/pages/About/About'
 
-import BookLayout from '@/components/BookLayout/BookLayout'
+import BookLayout from '@/layouts/BookLayout/BookLayout'
 import Service from '@/pages/Book/Service/Service'
 import Timeslot from '@/pages/Book/Timeslot/Timeslot'
 import Confirm from '@/pages/Book/Confirm/Confirm'

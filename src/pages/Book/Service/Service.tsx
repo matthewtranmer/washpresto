@@ -1,5 +1,7 @@
 import './Service.css'
 
+import { useBooking } from "@/context/BookingContext";
+
 import Checkbox from "@/components/Checkbox/Checkbox";
 import FoldedShirtSVG from "@/components/SVG/FoldedShirtSVG";
 import IronSVG from "@/components/SVG/IronSVG";
@@ -70,7 +72,8 @@ function Service(){
     // Index of service
     const [selectedService, setSelectedService] = useState(0);
     // Index of service weight
-    const [selectedWeight, setSelectedWeight] = useState(0);
+    // const [selectedWeight, setSelectedWeight] = useState(0);
+    const { bookingData, updateWeight } = useBooking();
 
     const navigate = useNavigate();
 
@@ -118,24 +121,24 @@ function Service(){
             <div className="service-weight-options">
 
                 <WeightOption 
-                    active={selectedWeight == 0}
-                    onClick={() => {setSelectedWeight(0)}}
+                    active={bookingData.weight == 6}
+                    onClick={() => {updateWeight(6)}}
                     title='Small bag'
                     info='Up to 6kg'
                     price='£10.00'
                 />
 
                 <WeightOption 
-                    active={selectedWeight == 1}
-                    onClick={() => {setSelectedWeight(1)}}
+                    active={bookingData.weight == 10}
+                    onClick={() => {updateWeight(10)}}
                     title='Standard bag'
                     info='Up to 10kg'
                     price='£15.00'
                 />
 
                 <WeightOption 
-                    active={selectedWeight == 2}
-                    onClick={() => {setSelectedWeight(2)}}
+                    active={bookingData.weight == 15}
+                    onClick={() => {updateWeight(15)}}
                     title='Large bag'
                     info='Up to 15kg'
                     price='£22.00'
